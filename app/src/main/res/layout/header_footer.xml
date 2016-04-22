@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="#009caa">
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/headerIcon"
+            android:src="@drawable/logo"
+            />
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="280dp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_height="50dp">
+                <Button
+                    android:id="@+id/home"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:text = "HOME"
+                    android:textAlignment="center"
+                    android:onClick="HomeIntent"
+                    android:textColor="#FFFFFF"
+                    android:background="?android:attr/selectableItemBackground"
+                     />
+                <Button
+                    android:id="@+id/deals"
+                    android:layout_width="90dp"
+                    android:textAlignment="center"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_height="match_parent"
+                    android:text="DEALS"
+                    android:onClick="dealIntent"
+                    android:textColor="#FFFFFF"/>
+
+                <Button
+                    android:id="@+id/help"
+                    android:layout_width="90dp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:layout_height="match_parent"
+                    android:text="HELP"
+                    android:onClick="HelpIntent"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <EditText
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/search_text"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/rounded_corners"
+                    android:hint="   What's your wish today?"
+                    android:textColor="#736F6E"
+                    android:textColorHint="#736F6E"
+                    android:layout_height="38dp"
+                    android:drawableLeft="@drawable/search"
+                    android:paddingLeft="10dp"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

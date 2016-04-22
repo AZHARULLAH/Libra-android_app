@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/filterPop"
+    android:layout_width="300dp"
+    android:layout_height="460dp"
+
+    android:orientation="vertical"
+
+    android:weightSum="1"
+    android:background="@color/accent_material_light">
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:text="Filter"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+
+        android:id="@+id/container3"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_margin="20dp"
+        tools:context=".MainActivity">
+
+        <ListView
+            android:id="@+id/brands"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|top"/>
+
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:progressDrawable="@drawable/style"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/min"
+            android:textColor="#FFFFFF"
+            android:text="Minimum"
+            />
+        <TextView
+            android:textColor="#FFFFFF"
+            android:text="At Present"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/now"
+            />
+        <TextView
+            android:text="Maximum"
+            android:textColor="#FFFFFF"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/max"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/close"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Done" />
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">aggregator</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="sorts_array">
+        <item>Sort</item>
+        <item>Price-Ascending</item>
+        <item>Price-Descending</item>
+        <item>Review-Ascending</item>
+        <item>Review-Descending</item>
+
+    </string-array>
+    <string-array name="filters_array">
+        <item>Filter</item>
+
+    </string-array>
+</resources>
